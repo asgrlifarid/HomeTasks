@@ -1,0 +1,23 @@
+.firstul {
+  background-color: yellow;
+}
+.coding {
+  font-weight: bold;
+  color: red;
+  border: 3px solid purple;
+
+  padding: 10px;
+}
+.secondp {
+  background-color: lightblue;
+}
+.p1,
+.p3 {
+  background-color: rgb(6, 83, 6);
+}
+.p2 {
+  background-color: lightcoral;
+}
+.link {
+  background-color: rgb(219, 219, 1);
+}
