@@ -1,0 +1,44 @@
+#heading {
+  color: white;
+  background-color: black;
+}
+.Models::marker {
+  color: red;
+}
+.Models::first-letter {
+  size: 5px;
+}
+.Models::first-line {
+  background-color: lightgreen;
+}
+.boddy::selection {
+  background-color: darkblue;
+}
+#heading2 {
+  color: antiquewhite;
+  background-color: blue;
+}
+.Modelss li:last-child {
+  color: green;
+}
+.Modelss li:nth-child(2n + 1) {
+  color: pink;
+}
+.button1 {
+  color: rgb(48, 78, 3);
+}
+.button2 {
+  color: lightcoral;
+}
+#heading3 {
+  color: black;
+  background-color: red;
+}
+.Country h2 {
+  color: red;
+  background-color: green;
+}
+.NewCities ~ p {
+  color: blue;
+  background-color: rgb(107, 63, 9);
+}
