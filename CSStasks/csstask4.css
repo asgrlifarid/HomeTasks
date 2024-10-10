@@ -38,7 +38,7 @@ h1 {
   margin-top: 40px;
   background-color: black;
   color: white;
-  border-radius: 20%;
+  border-radius: 50%;
 }
 .alldiv {
   display: flex;
@@ -75,7 +75,7 @@ h1 {
   margin-top: 40px;
   background-color: white;
   color: rgb(224, 60, 87);
-  border-radius: 20%;
+  border-radius: 50%;
 }
 .fa-brands.fa-youtube {
   font-size: 5rem;
