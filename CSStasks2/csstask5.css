@@ -63,6 +63,8 @@ h1 {
   font-size: x-large;
   display: flex;
   justify-content: space-between;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
 }
 .button1 {
   text-align: center;
