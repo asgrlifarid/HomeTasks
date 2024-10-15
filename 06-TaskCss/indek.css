@@ -1,0 +1,126 @@
+* {
+  margin-top: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+}
+.heading {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  color: white;
+  align-items: center;
+  padding: 20px;
+}
+.heading ul {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.heading2 {
+  display: flex;
+  flex-direction: column;
+}
+.bootstrap {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  color: white;
+  max-width: 100%;
+  height: 500px;
+  padding-top: 50px;
+}
+.button1 {
+  width: 100px;
+  height: 30px;
+  border-radius: 10%;
+  border: none;
+  background-color: rgb(12, 93, 187);
+  color: white;
+}
+.button2 {
+  width: 100px;
+  height: 30px;
+  border-radius: 10%;
+  border: 1px solid white;
+  background-color: #333;
+  color: white;
+}
+.heading1 {
+  font-size: 60;
+}
+.reading {
+  font-size: 30;
+}
+.buttons {
+  padding-top: 50px;
+}
+.building {
+  padding-top: 30px;
+}
+#services {
+  padding-top: 40px;
+}
+.fa-regular {
+  padding-bottom: 50px;
+  padding-top: 10px;
+  color: rgb(12, 93, 187);
+}
+.fa-solid {
+  padding-bottom: 50px;
+  padding-top: 10px;
+  color: rgb(12, 93, 187);
+}
+.working {
+  max-width: 100%;
+  height: 250px;
+  background-color: rgb(238, 235, 235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 600px;
+  padding-right: 600px;
+  font-size: 30;
+  font-style: italic;
+}
+.col-12 {
+  background-color: rgb(26, 145, 243);
+}
+
+.signup-form .email {
+  position: relative;
+
+  right: 0;
+}
+.sigup-form {
+  width: 100%;
+  height: 48px;
+  padding-top: 10%;
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20rem;
+}
+.foremp {
+  width: 100px;
+  height: 100px;
+}
+.sigup-form .signup-btn {
+  position: absolute;
+  height: 30px;
+  background-color: rgb(26, 145, 243);
+  color: white;
+  border: 0.5px solid black;
+  border-radius: right 10%;
+}
+.email {
+  height: 30px;
+  width: 170px;
+  border-radius: 10%;
+  border: none;
+}
