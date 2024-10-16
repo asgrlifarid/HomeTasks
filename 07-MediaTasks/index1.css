@@ -1,0 +1,106 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+#header {
+  max-width: 100%;
+  background-image: url(https://github.com/StartBootstrap/startbootstrap-agency/blob/master/dist/assets/img/header-bg.jpg?raw=true);
+  background-position: center;
+}
+#footer {
+  max-width: 100%;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  height: 300px;
+}
+.container ul {
+  display: flex;
+  gap: 2rem;
+  font-size: 22;
+  color: #fff;
+  margin-top: 20px;
+}
+.start {
+  color: yellow;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-size: 40;
+}
+.maincont {
+  text-align: center;
+  align-items: center;
+  padding-bottom: 240px;
+}
+.iconn {
+  height: 30px;
+  width: 110px;
+  border: 1px solid rgb(170, 167, 167);
+  display: none;
+  text-align: center;
+  color: rgb(170, 167, 167);
+  margin-top: 20px;
+}
+.btn1 {
+  width: 200px;
+  border-radius: 10%;
+  color: #fff;
+  background-color: rgb(236, 183, 8);
+  height: 55px;
+  border: 1px solid #fff;
+  text-align: center;
+}
+.container1 {
+  text-align: center;
+  padding-top: 50px;
+}
+.card {
+  text-align: center;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.icon .fa-solid {
+  font-size: 80;
+  width: 300px;
+  height: 100px;
+  background-color: rgb(236, 183, 8);
+  padding-top: 10px;
+  border-radius: 55%;
+  color: #fff;
+}
+.container2 {
+  padding-top: 50px;
+}
+.container3 {
+  text-align: center;
+  padding-top: 150px;
+  max-width: 100%;
+}
+.container3 .carts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-top: 50px;
+}
+.cartss {
+  padding-top: 50px;
+}
+
+@media only screen and (max-width: 991px) {
+  .container ul {
+    display: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .iconn {
+    display: block;
+  }
+}
