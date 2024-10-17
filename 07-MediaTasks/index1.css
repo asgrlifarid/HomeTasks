@@ -93,6 +93,22 @@
 .cartss {
   padding-top: 50px;
 }
+.col-4 i {
+  margin-left: 40px;
+  padding-top: 20px;
+}
+.col-4 img {
+  width: 200px;
+}
+.logocont ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.lasst {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 100px;
+}
 
 @media only screen and (max-width: 991px) {
   .container ul {
