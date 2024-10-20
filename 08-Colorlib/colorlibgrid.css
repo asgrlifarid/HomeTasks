@@ -87,7 +87,7 @@
   }
   .col-md-6 {
     width: calc(100% / 12 * 6);
-    padding: 1rem;
+    padding: 3rem;
   }
   .col-md-7 {
     width: calc(100% / 12 * 7);
