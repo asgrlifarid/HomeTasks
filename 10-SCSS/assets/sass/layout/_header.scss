@@ -1,0 +1,30 @@
+header {
+  background-color: $bg-color-secondary;
+  .header {
+    @include flexBox();
+    height: 80px;
+  }
+  nav {
+    @include for-phone-only{
+      display: none;
+    }
+    ul {
+      display: flex;
+      gap: 2rem;
+      a {
+        color: $color-white;
+        font-size: 1rem;
+      }
+    }
+  }
+  .contact {
+    @extend %primary-btn;
+  }
+  .menu{
+  display: none;
+  @include for-phone-only{
+    display: block;
+  }
+
+  }
+}
