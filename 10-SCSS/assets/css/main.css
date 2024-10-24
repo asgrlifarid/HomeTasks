@@ -173,7 +173,7 @@ h5 {
   color: #ef6d58;
 }
 
-#design-agency .container .design-agency .design-agency-content .agency-btn, #home-page #hero-banner .hero-banner .hero-banner-content .btns .contact-us, header .contact {
+#top-footer .container .top-footer .top-footer-content .top-footer-btn, #design-agency .container .design-agency .design-agency-content .agency-btn, #home-page #hero-banner .hero-banner .hero-banner-content .btns .contact-us, #portfolio .container .contact, header .contact {
   color: #fff;
   background-color: transparent;
   text-transform: 14px;
@@ -183,7 +183,7 @@ h5 {
   cursor: pointer;
   transition: all 0.6s;
 }
-#design-agency .container .design-agency .design-agency-content .agency-btn:hover, #home-page #hero-banner .hero-banner .hero-banner-content .btns .contact-us:hover, header .contact:hover {
+#top-footer .container .top-footer .top-footer-content .top-footer-btn:hover, #design-agency .container .design-agency .design-agency-content .agency-btn:hover, #home-page #hero-banner .hero-banner .hero-banner-content .btns .contact-us:hover, #portfolio .container .contact:hover, header .contact:hover {
   background-color: rgb(103, 104, 119);
 }
 
@@ -425,6 +425,35 @@ header .menu {
   }
 }
 
+#portfolio .container .header {
+  background-color: rgb(40, 41, 62);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+}
+@media (max-width: 767px) {
+  #portfolio .container nav {
+    display: none;
+  }
+}
+#portfolio .container nav ul {
+  display: flex;
+  gap: 2rem;
+}
+#portfolio .container nav ul a {
+  color: #fff;
+  font-size: 1rem;
+}
+#portfolio .container .menu {
+  display: none;
+}
+@media (max-width: 767px) {
+  #portfolio .container .menu {
+    display: block;
+  }
+}
+
 #home-page #hero-banner {
   background-color: rgb(40, 41, 62);
 }
@@ -546,4 +575,120 @@ header .menu {
 }
 #numbers .container .numbers-parts h3 {
   margin-top: 50px;
+}
+
+#top-footer {
+  background-color: #fdf0e9;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#top-footer .container {
+  width: 1170px;
+  height: 544px;
+}
+#top-footer .container .top-footer {
+  background-color: #EF6D58;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#top-footer .container .top-footer .top-footer-content {
+  padding: 0 3rem;
+  padding-bottom: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#top-footer .container .top-footer .top-footer-content h2 {
+  color: #fff;
+}
+#top-footer .container .top-footer .top-footer-content p {
+  color: #fff;
+}
+#top-footer .container .top-footer .top-footer-content .top-footer-btn {
+  border: 1px solid transparent;
+  background-color: #fff;
+  color: #000;
+}
+#top-footer .container .top-footer .top-footer-content .top-footer-btn:hover {
+  color: #fff;
+}
+#top-footer .container .top-footer .top-footer-photo {
+  padding: 0 3rem;
+}
+
+#home-page #hero-banner {
+  background-color: rgb(40, 41, 62);
+}
+#home-page #hero-banner .hero-banner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+@media (max-width: 767px) {
+  #home-page #hero-banner .hero-banner {
+    flex-direction: column-reverse;
+  }
+}
+#home-page #hero-banner .hero-banner .hero-banner-content {
+  padding-bottom: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#home-page #hero-banner .hero-banner .hero-banner-content h1 {
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  max-width: 513px;
+  padding-top: 50px;
+}
+#home-page #hero-banner .hero-banner .hero-banner-content p {
+  color: #fff;
+  opacity: 0.64;
+  line-height: 2rem;
+  max-width: 570px;
+  text-align: center;
+}
+
+#cards .container .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas: "card1 card2 card3" "card4 card5 card6" "card7 card8 card9";
+}
+#cards .container .card1 {
+  grid-area: card1;
+}
+#cards .container .card2 {
+  grid-area: card2;
+}
+#cards .container .card3 {
+  grid-area: card3;
+}
+#cards .container .card4 {
+  grid-area: card4;
+}
+#cards .container .card5 {
+  grid-area: card5;
+}
+#cards .container .card6 {
+  grid-area: card6;
+}
+#cards .container .card7 {
+  grid-area: card7;
+}
+#cards .container .card8 {
+  grid-area: card8;
+}
+#cards .container .card9 {
+  grid-area: card9;
 }/*# sourceMappingURL=main.css.map */

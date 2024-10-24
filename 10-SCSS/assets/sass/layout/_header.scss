@@ -5,7 +5,7 @@ header {
     height: 80px;
   }
   nav {
-    @include for-phone-only{
+    @include for-phone-only {
       display: none;
     }
     ul {
@@ -20,11 +20,43 @@ header {
   .contact {
     @extend %primary-btn;
   }
-  .menu{
-  display: none;
-  @include for-phone-only{
-    display: block;
+  .menu {
+    display: none;
+    @include for-phone-only {
+      display: block;
+    }
   }
-
+}
+#portfolio {
+  .container {
+    .header {
+      background-color: $bg-color-secondary;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+      height: 80px;
+    }
+    nav {
+      @include for-phone-only {
+        display: none;
+      }
+      ul {
+        display: flex;
+        gap: 2rem;
+        a {
+          color: $color-white;
+          font-size: 1rem;
+        }
+      }
+    }
+    .contact {
+      @extend %primary-btn;
+    }
+    .menu {
+      display: none;
+      @include for-phone-only {
+        display: block;
+      }
+    }
   }
 }
