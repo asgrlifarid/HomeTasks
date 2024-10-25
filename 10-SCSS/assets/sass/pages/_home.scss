@@ -239,3 +239,57 @@
     
   }
 }
+
+
+  #hero-banner{
+    background-color: $bg-color-secondary;
+    .hero-banner{
+      @include for-phone-only {
+        flex-direction: column-reverse;
+      }
+      @include flexBox();
+      flex-wrap: wrap;
+      gap: 4rem;
+      .hero-banner-content-2 {
+        padding-bottom: 50px;
+        position: relative;
+        text-align: center;
+        
+        gap: 1.5rem;
+      
+        h1 {
+          text-align: center;
+          z-index: 1;
+          position: relative;
+          max-width: 513px;
+          padding-top: 50px;
+        }
+        p {
+          color: $color-white;
+          opacity: 0.64;
+          line-height: 2rem;
+          max-width: 570px;
+          text-align: center;
+        }
+      
+       
+       
+      }
+      
+    }
+  }
+  #articles{
+    .container{
+      .row{
+        .col-6{
+          img{
+            width: 570px;
+            height: 336px;
+          }
+          h3{
+            width: 538px;
+          }
+        }
+      }
+    }
+  }
