@@ -25,9 +25,7 @@ section#BlogArticles{
     }
 #articles{
         .row{
-            display: flex;
-            justify-content: space-evenly;
-            gap: 50px;
+           
             .col-3{
               img{
                 width: 300px;
@@ -41,4 +39,18 @@ section#BlogArticles{
             }
         }
     
+}
+section#articles-2{
+    .container{
+        .row{
+            
+            .col-4{
+                
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
