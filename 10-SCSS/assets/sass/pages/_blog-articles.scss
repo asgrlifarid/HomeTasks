@@ -3,9 +3,10 @@
     margin: 0%;
 }
 section#BlogArticles{
+    background-color:$bg-color-secondary ;
     margin-top: 20px;
+    margin-bottom: 20px;
         padding:40px 0px;
-        background-color:$bg-color-secondary ;
         .row{
             .col-12{
                 @include flexBox();
@@ -24,13 +25,17 @@ section#BlogArticles{
         }
     }
 #articles{
+    background-color:$bg-color ;
+    padding-top: 
+    100px;
         .row{
-           
-            .col-3{
-              img{
-                width: 300px;
-              }
+            .col-6{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
                 img{
+                  width: 100%;
                     &:hover{
                         transform: scale(1.03);
                         transition: 0.5s;
@@ -41,14 +46,24 @@ section#BlogArticles{
     
 }
 section#articles-2{
+    background-color:$bg-color ;
+    padding-top: 100px;
     .container{
         .row{
             
             .col-4{
-                
+                .card{
+                    display: flex;
+                flex-direction: column;
+                gap: 10px;
 
+                }
                 img{
                     width: 100%;
+                    &:hover{
+                        transform: scale(0.95);
+                        transition: 0.5s;
+                    }
                 }
             }
         }

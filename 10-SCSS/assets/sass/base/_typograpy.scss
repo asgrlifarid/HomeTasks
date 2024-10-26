@@ -12,16 +12,24 @@ h2 {
   color: $primary-color;
   @include for-phone-only {
     font-size: 40px;
+    line-height: 48px;
   }
 }
 h3 {
   font-size: 40px;
   color: $primary-color;
+  font-family: "Epilogue", sans-serif;
 }
 h4 {
   font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "Epilogue", sans-serif;
+  
 }
 h5 {
   font-size: 16px;
   color: $secondary-color;
+  font-family: "Epilogue", sans-serif;
 }
+

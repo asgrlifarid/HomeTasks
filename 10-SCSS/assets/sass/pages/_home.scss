@@ -2,7 +2,7 @@
   #hero-banner {
     background-color: $bg-color-secondary;
     .hero-banner {
-      @include flexBox();
+     background-color: $bg-color-secondary;
       @include for-phone-only {
         flex-direction: column-reverse;
       }
@@ -10,6 +10,7 @@
       flex-wrap: wrap;
       gap: 4rem;
       .hero-banner-content {
+        background-color: $bg-color-secondary;
         padding-bottom: 50px;
         position: relative;
         gap: 1.5rem;
