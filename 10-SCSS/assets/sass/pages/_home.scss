@@ -2,6 +2,7 @@
   #hero-banner {
     background-color: $bg-color-secondary;
     .hero-banner {
+      @include flexBox();
       @include for-phone-only {
         flex-direction: column-reverse;
       }
@@ -11,8 +12,6 @@
       .hero-banner-content {
         padding-bottom: 50px;
         position: relative;
-        display: flex;
-        flex-direction: column;
         gap: 1.5rem;
         h5 {
           text-transform: uppercase;
@@ -124,156 +123,3 @@
     }
   }
 }
-#top-footer {
-  padding-top: 100px;
-  background-color: $bg-color;
-  @include flexBox();
-  .container {
-    width: 1170px;
-
-    height: 544px;
-    .top-footer {
-      background-color: #ef6d58;
-
-      @include flexBox();
-      .top-footer-content {
-        padding: 0 3rem;
-        padding-bottom: 50px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        h2 {
-          color: $color-white;
-        }
-        p {
-          color: $color-white;
-        }
-        .top-footer-btn {
-          @extend %primary-btn;
-          border: 1px solid transparent;
-          background-color: $color-white;
-          color: $color-dark;
-          &:hover {
-            color: $color-white;
-          }
-        }
-      }
-      .top-footer-photo {
-        padding: 0 3rem;
-      }
-    }
-  }
-}
-#home-page {
-  #hero-banner {
-    background-color: $bg-color-secondary;
-    .hero-banner {
-      @include for-phone-only {
-        flex-direction: column-reverse;
-      }
-      @include flexBox();
-      flex-wrap: wrap;
-      gap: 4rem;
-      .hero-banner-content {
-        padding-bottom: 50px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-
-        h1 {
-          text-align: center;
-          z-index: 1;
-          position: relative;
-          max-width: 513px;
-          padding-top: 50px;
-        }
-        p {
-          color: $color-white;
-          opacity: 0.64;
-          line-height: 2rem;
-          max-width: 570px;
-          text-align: center;
-        }
-      }
-    }
-  }
-}
-#cards {
-  .container {
-    .row {
-      .img-part{
-        position: relative;
-        img{width: 100%;
-        height: 100%;
-      }
-      .img-text{
-        position: absolute;
-        top: 55%;
-        left: 10%;
-        background-color: $color-white;
-        border-radius: 8px;
-        padding: 10px 20px;
-      }
-      }
-    }
-  }
-}
-<<<<<<< HEAD
-
-
-  #hero-banner{
-    background-color: $bg-color-secondary;
-    .hero-banner{
-      @include for-phone-only {
-        flex-direction: column-reverse;
-      }
-      @include flexBox();
-      flex-wrap: wrap;
-      gap: 4rem;
-      .hero-banner-content-2 {
-        padding-bottom: 50px;
-        position: relative;
-        text-align: center;
-        
-        gap: 1.5rem;
-      
-        h1 {
-          text-align: center;
-          z-index: 1;
-          position: relative;
-          max-width: 513px;
-          padding-top: 50px;
-        }
-        p {
-          color: $color-white;
-          opacity: 0.64;
-          line-height: 2rem;
-          max-width: 570px;
-          text-align: center;
-        }
-      
-       
-       
-      }
-      
-    }
-  }
-  #articles{
-    .container{
-      .row{
-        .col-6{
-          img{
-            width: 570px;
-            height: 336px;
-          }
-          h3{
-            width: 538px;
-          }
-        }
-      }
-    }
-  }
-=======
->>>>>>> 3f48b784376970ff93e7ad40776cd626bfb22077

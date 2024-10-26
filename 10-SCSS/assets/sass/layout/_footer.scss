@@ -1,41 +1,134 @@
-#agency {
-  padding-top: 200px;
-  .col2 {
-    @include flexBox();
-    justify-content: space-around;
-    @include for-phone-only {
-      justify-content: left;
-      gap: 40px;
-    }
-    h5 {
-      color: $secondary-color;
-      padding-bottom: 1rem;
-    }
-    p {
-      line-height: 32px;
-    }
-  }
-  .col3 {
-    .icon {
-      @include flexBox();
-      justify-content: right;
-      font-size: 1.5rem;
-      @include for-phone-only {
-        justify-content: left;
-      }
-
-      i {
-        font-size: 15px;
-        color: $color-white;
+footer{
+    padding: 100px 0px;
+    background-color:$bg-color-secondary ;
+    section#head{
+        .container{
         background-color: $secondary-color;
-        border-radius: 50%;
-        padding: 10px;
-        margin-left: 10px;
-        &:hover {
-          transform: scale(1.03);
-          transition: 0.5s;
+        padding: 50px 0px;
+        .row{
+            .col1{
+                @include flexBox();
+                flex-direction: column;
+                .text{
+                    
+                    padding: 0% 6%;
+                    h2{
+                        max-width: 550px;
+                    }
+                }
+                p{
+                    line-height: 32px;
+                    font-size: 1rem;
+                    font-family: "Epilogue", sans-serif;
+                    padding-top: 2%;
+                    
+                }
+                .button{
+                    width: 100%;
+                    padding: 3% 6%;
+                    
+                    button{
+                        border: none;
+                        padding: 20px 30px;
+                        
+                        border-radius: 8px;
+                        font-family: "Epilogue", sans-serif;
+                        font-weight: 700;
+
+                        &:hover{
+                            
+                            transition: 0.5s;
+                            transform: scale(1.02);
+                           
+                            
+                        }
+                    }
+                }
+
+                
+            }
+            .col2{
+                @include flexBox();
+                @include for-phone-only{
+                    order: -1;
+                }
+                
+                .img{
+                     
+                    img{
+                        @include flexBox();
+                        width: 100%;
+                        
+                    }
+                }
+            }
         }
-      }
     }
-  }
+    }
+    section#agency{
+        padding-top: 100px;
+        .col2{
+            @include flexBox();
+            justify-content: space-around;
+            @include for-phone-only{
+                    justify-content: left;
+                    gap: 40px;
+                }
+            h5{
+                                padding-bottom: 1rem;
+            }
+            p{
+                line-height: 32px;
+            }
+
+        }
+        .col3{
+            .icon{
+                @include flexBox();
+                justify-content: right;
+                font-size: 1.5rem;
+                @include for-phone-only{
+                    justify-content: left;
+                }
+                
+                i{
+                    
+                    border-radius: 50%;
+                    padding: 10px;
+                    margin-left: 10px;
+                    
+                    &:hover{
+                    transform: scale(1.03);
+                    transition: 0.5s;
+                }
+                }
+                
+            }
+        }
+    }
+    section#last{
+        margin-top:100px ;
+        .row{
+            .col1{
+                p{
+                    font-size: 1.3rem;
+                    opacity: 0.7;
+                }
+            }
+            .col2{
+                @include flexBox();
+                justify-content: right;
+                 @include for-phone-only{
+                    justify-content: left;
+                }
+                .text2{
+                    @include flexBox();
+                    gap: 20px;
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    
+                }
+            }
+        }
+    }
 }

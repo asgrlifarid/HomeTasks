@@ -1,12 +1,20 @@
-.container{
+// .container {
+//   max-width: 80%;
+//   margin: 0 auto;
+// }
+
+.container {
   max-width: 1200px;
   margin: 0 auto;
+
+  @media only screen and (max-width: 1200px) {
+    padding: 0 5%;
+  }
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 
 .col-1 {
@@ -64,10 +72,6 @@
 .p-right-0 {
   padding-right: 0;
 }
-.row1 {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 @media only screen and (max-width: 1023px) {
   .col-md-1 {
@@ -92,7 +96,7 @@
   }
   .col-md-6 {
     width: calc(100% / 12 * 6);
-    padding: 3rem;
+    padding: 1rem;
   }
   .col-md-7 {
     width: calc(100% / 12 * 7);
