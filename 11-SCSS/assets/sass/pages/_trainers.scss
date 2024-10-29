@@ -1,0 +1,39 @@
+
+
+.col-3 .img-hover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.col-3 .img-hover .overlay-icons {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #f6214b;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.col-3 .img-hover:hover .overlay-icons {
+  opacity: 0.7;
+}
+.col-3 {
+  h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #222222;
+    line-height: 21.6px;
+    font-family: "Poppins", sans-serif;
+  }
+  p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22.75px;
+    font-family: "Poppins", sans-serif;
+  }
+}
