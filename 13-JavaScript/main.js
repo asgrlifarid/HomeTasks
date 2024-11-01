@@ -114,7 +114,7 @@
 //   { name: "Ali", scores: [90, 85, 92] },
 //   { name: "Mammal", scores: [75, 80, 85] },
 //   { name: "Camil", scores: [90, 95, 85] },
-//   { name: "Davud", scores: [100, 100, 100] },
+//   { name: "Davud", scores: [100, 100, 100] }
 // ];
 
 // let enyuksekAd = "";
