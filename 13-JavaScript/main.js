@@ -86,7 +86,56 @@
 // let bosluqSay=0;
 // for (let i = 0; i < sampleNews.length; i++) {
 //   if (sampleNews[i] === " ") {
-//    bosluqSay++; 
+//    bosluqSay++;
 //   }
 // }
 // console.log (`${bosluqSay}`);
+
+// let array = [14, 22, 3, 74, 51, 36];
+// let eded= +prompt("eded daxil et baxm");
+
+// let number = Number(eded);
+// let axtar = false;
+
+// for (let i = 0; i < array.length; i++) {
+//   if (array[i] === number) {
+//    axtar = true;
+//     break;
+//   }
+// }
+
+// if (axtar) {
+//   console.log(`${number} buralarda olmalidi yaxsi bax`);
+// } else {
+//   console.log(`${number} yoxdu brat axtarma yalannan`);
+// }
+
+// const students = [
+//   { name: "Ali", scores: [90, 85, 92] },
+//   { name: "Mammal", scores: [75, 80, 85] },
+//   { name: "Camil", scores: [90, 95, 85] },
+//   { name: "Davud", scores: [100, 100, 100] },
+// ];
+
+// let enyuksekAd = "";
+// let enyuksekSay = 0;
+// const doxsanYuxari = [];
+
+// for (let i = 0; i < students.length; i++) {
+//   const student = students[i];
+
+//   const average =
+//     student.scores.((a, b) => a + b) / student.scores.length;
+
+//   if (average > enyuksekSay) {
+//     enyuksekSay = average;
+//     enyuksekAd = student.name;
+//   }
+
+//   if (average => 90) {
+//     doxsanYuxari.push(student.name);
+//   }
+// }
+
+// console.log(enyuksekAd);
+
