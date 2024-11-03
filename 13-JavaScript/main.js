@@ -139,7 +139,6 @@
 
 // console.log(enyuksekAd);
 
-
 // const fruits = ["alma", "banan", "qarpız", "portağal  ", "ananas", "nar"];
 
 // let maxlengthElement=fruits[0];
