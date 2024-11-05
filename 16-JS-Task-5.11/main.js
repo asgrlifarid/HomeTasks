@@ -321,8 +321,156 @@ const products = [
 //   });
   
 //   console.log(yeniQiymet);
+
+
   
 
 
+let arr = [
+  {
+    name: "test",
+    key: 1,
+  },
+  {
+    name: "task",
+    key: 2,
+  },
+  {
+    name: "tanqo",
+    key: 3,
+  },
+  {
+    name: "like",
+    key: 4,
+  },
+  {
+    name: "task",
+    key: 5,
+  },
+  {
+    name: "trust",
+    key: 6,
+  },
+  {
+    name: "test",
+    key: 7,
+  },
+  {
+    name: "last",
+    key: 8,
+  },
+  {
+    name: "tanqo",
+    key: 9,
+  },
+  {
+    name: "elephant",
+    key: 10,
+  },
+  {
+    name: "love",
+    key: 11,
+  },
+  {
+    name: "small",
+    key: 12,
+  },
+  {
+    name: "little",
+    key: 13,
+  },
+];
+
+
+// 1) "name"-i "t" herfi ile bashlayan obyektleri yeni arraya yigin (filter)
+// let yeniArrey = arr.filter((obyekt)=>{
+//   return obyekt.name[0] === "t";
+// })
+// console.log(yeniArrey);
+
+
+
+
+
+
+
+// 2) "name"-i "t" herfi ile bashlayib "t" herfi ile biten obyektlerin sayini tapin (forEach)
+// let say = 0;
+// arr.forEach((obyekt) => {
+//   const name = obyekt.name;
+//   if (name.indexOf("t") === 0 && name.lastIndexOf("t") === name.length - 1) {
+//     say++;
+//   }
+// });
+// console.log(say);
+
+
+
+
+
+
+
+// 3) "name"-i "t" herfi ile bashlayib "t" herfi ile biten obyektlerin "key"- lerinin cemini tapin
+// let cem = 0;
+// arr.forEach((obyekt) => {
+//   const name = obyekt.name;
+//   if (name.indexOf("t") === 0 && name.lastIndexOf("t") === name.length - 1) {
+//       cem += obyekt.key;
+//   }
+// });
+// console.log(cem);
+
+
+
+
+
+
+
+
+//"name"-i "e" herfi ile biten obyeklerdeki name-in deyerini "SuperDev" sozu ile evezleyin.
+  // let yeniArrey = arr.filter((obyekt)=>{
+  //   if (obyekt.name[obyekt.name.length -1] === "e") {
+  //     obyekt.name = "SuperDev";
+  //   }
+  //   return obyekt;
+  // })
+  // console.log(yeniArrey);
+
+
+
+
+
+
+
+// 6) "name"-i en uzun olan obyektin key'ni tapin
+// let yeniArrey = arr.reduce((uzun, obyekt)=>{
+//   return obyekt.name.length > uzun.name.length ? obyekt : uzun;
+// },arr[0])    
+// console.log(yeniArrey);
+
+
+
+
+
+
+
+// "name"-i en uzun olan obyektin indexin kvadratini hesablayin                  
+// let yeniArrey = arr.reduce((uzun, obyekt, index) => {
+//   return obyekt.name.length > arr[uzun].name.length ? index : uzun;
+// }, 0);
+// console.log(yeniArrey);
+
+
+
+
+
+
+
+
+// 8) "name"-inin uzunlugu 4 olan obyektlerden ibaret yeni array yaradin. (filter)
+// let yeniArrey = arr.filter((obyekt, index) => {
+//   return obyekt.name.length === 4
+// });
+// console.log(yeniArrey);
 
 
