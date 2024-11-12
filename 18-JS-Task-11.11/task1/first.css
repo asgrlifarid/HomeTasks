@@ -1,0 +1,9 @@
+ 
+ #content {
+        font-size: 16px;
+        color: black;
+      }
+      button,
+      input[type="text"] {
+        margin: 5px;
+      }
