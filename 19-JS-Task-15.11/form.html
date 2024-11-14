@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Add Form</h2>
+        <form id="productForm">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="Title">
+
+            <label for="price">Price</label>
+            <input type="number" id="price" name="price" placeholder="Price">
+
+            <label for="description">Description</label>
+            <input type="text" id="description" name="description" placeholder="Description">
+
+            <label for="image">Image</label>
+            <input type="url" id="image" name="image" placeholder="Image URL">
+
+            <button type="button" id="submitBtn">Add</button>
+        </form>
+    </div>
+<div class="overlay"></div>
+    
+    <div id="error" class="qutu">
+        <h2>Vay Vayy..</h2>
+        <p>Hardasa bosdug vare brat</p>
+        <button id="closeErrorModal">OK</button>
+    </div>
+
+    
+    <div id="ugurlu" class="qutu ugurlu">
+        <h1>✓</h1>
+        <p>Mehsul budur!!!</p>
+        <button id="closeUgurluModal">OK</button>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
