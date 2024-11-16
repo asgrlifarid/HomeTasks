@@ -64,3 +64,12 @@
             margin-top: 15px;
             background-color: #6a0dad;
         }
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .fa-solid.fa-trash-can {
+    cursor: pointer;
+  }
