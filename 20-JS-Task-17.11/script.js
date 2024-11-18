@@ -1,24 +1,35 @@
-const allTodos=document.querySelector("#allTodos")
-const completedTodos=document.querySelector("#completedTodos")
-const pendingTodos=document.querySelector("#pendingTodos")
-const clearTodos=document.querySelector("#clearAll")
-const todoList=document.querySelector("#todoList")
-const todoCount=document.querySelector("#todoCount")
-const addButton=document.querySelector("#addButton")
-const todoInput=document.querySelector("#todoInput")
+const allTodos = document.querySelector("#allTodos");
+const completedTodos = document.querySelector("#completedTodos");
+const pendingTodos = document.querySelector("#pendingTodos");
+const clearTodos = document.querySelector("#clearAll");
+const todoList = document.querySelector("#todoList");
+const todoCount = document.querySelector("#todoCount");
+const addButton = document.querySelector("#addButton");
+const todoInput = document.querySelector("#todoInput");
+// let todos = [];
+let todos = loadTodosFromLocalStorage(); 
 
-let todos=[];
+renderTodos(); 
+
 
 
 addButton.addEventListener("click", function () {
-    if (todoInput.value.trim()==="") return;
-    const newTodo = {
-    text:todoInput.value.trim(), 
-    competed:false,
-    };
-    todos.push(newTodo);
-    todoInput.value=""
-    renderTodos();
+  if (todoInput.value.trim() === "") return;
+  const newTodo = {
+    text: todoInput.value.trim(),
+    competed: false,
+  };
+  todos.push(newTodo);
+  todoInput.value = "";
+  saveTodosToLocalStorage(todos);
+  renderTodos();
+
+  Swal.fire({
+    title: "Ugurlu!",
+    text: "elave edildi",
+    icon: "success",
+    confirmButtonText: "Okeyy",
+  });
 });
 
 function renderTodos(filter = "all") {
@@ -39,28 +50,50 @@ function renderTodos(filter = "all") {
         <button onclick="deleteTodo(${index})">🗑</button>
       </div>
     `;
-    todoList.appendChild(li); 
+    todoList.appendChild(li);
   });
 
-  updateTodoCount(); 
+  updateTodoCount();
 }
 
-function toggleCompleted(index){
-    todos[index].completed=!todos[index].completed 
-    renderTodos();
+function toggleCompleted(index) {
+  todos[index].completed = !todos[index].completed;
+   saveTodosToLocalStorage(todos);  
+  renderTodos();
 }
 
+function deleteTodo(index) {
+  todos.splice(index, 1);
+   saveTodosToLocalStorage(todos);  
+  renderTodos();
 
-function deleteTodo(index){
-    todos.splice(index,1);
-    renderTodos();
+  Swal.fire({
+    title: "silirsiz a ba menniy deyl !!",
+    icon: "question",
+    html: `
+   Eger silseniz gedb qaytarib getiremmiyecem ha
+  `,
+    showCloseButton: true,
+    showCancelButton: true,
+    focusConfirm: false,
+    confirmButtonText: `
+    <i class="fa fa-thumbs-up"></i> Great!
+  `,
+    confirmButtonAriaLabel: "Thumbs up, great!",
+    cancelButtonText: `
+    <i class="fa fa-thumbs-down"></i>
+  `,
+    cancelButtonAriaLabel: "Close", 
+  });
 }
-clearTodos.addEventListener("click",function(){
-todos=[];
-renderTodos();
+clearTodos.addEventListener("click", function () {
+  todos = [];
+   saveTodosToLocalStorage(todos);  
+  renderTodos();
 });
 
 allTodos.addEventListener("click", function () {
+
   renderTodos("all");
 });
 
@@ -71,3 +104,22 @@ completedTodos.addEventListener("click", function () {
 pendingTodos.addEventListener("click", function () {
   renderTodos("pending");
 });
+
+function updateTodoCount() {
+  todoCount.textContent = `umumi ADD elediinin sayi
+  : ${todos.length}`;
+}
+
+
+function saveTodosToLocalStorage(todos) {
+  localStorage.setItem("todos", JSON.stringify(todos)); 
+}
+
+function loadTodosFromLocalStorage() {
+  const savedTodos = localStorage.getItem("todos");
+  if (savedTodos) {
+    return JSON.parse(savedTodos);
+  } else {
+    return []; 
+  }
+}
