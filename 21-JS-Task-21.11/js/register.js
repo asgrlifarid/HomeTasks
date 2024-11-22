@@ -26,6 +26,8 @@ registerForm.addEventListener("submit", function (event) {
       email: emailInput.value.trim(),
       isLogged: false,
       password: passwordInput.value.trim(),
+      basket:[],
+      favorites:[],
     };
 
     users.push(user);
