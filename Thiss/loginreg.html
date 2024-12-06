@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginreg.css">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for eye icon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form class="signUp">
+            <h3>Create Your Account</h3>
+
+            <input class="w100" type="email" placeholder="Insert email" required autocomplete='off' />
+            <div class="password-container">
+                <input id="signup-password" type="password" placeholder="Insert Password" required />
+                <span class="eye-icon" onclick="togglePassword('signup-password')"><i class="fas fa-eye"></i></span>
+            </div>
+            <input type="text" placeholder="Insert Username" required />
+            <input type="text" placeholder="Insert Fullname" required />
+            <input type="file" placeholder="Insert Profile Img" required />
+            <button class="form-btn sx log-in" type="button">Log In</button>
+            <button class="form-btn dx" type="submit">Sign Up</button>
+        </form>
+        <form class="signIn">
+            <h3>Welcome</h3>
+            <button class="fb" type="button">Thank you for ALL!</button>
+            <p>- or -</p>
+            <input type="email" placeholder="Insert eMail" autocomplete='off' required />
+            <div class="password-container">
+                <input id="signin-password" type="password" placeholder="Insert Password" required />
+                <span class="eye-icon" onclick="togglePassword('signin-password')"><i class="fas fa-eye"></i></span>
+            </div>
+            <button class="form-btn sx back" type="button">Back</button>
+            <button class="form-btn dx" type="submit">Log In</button>
+        </form>
+    </div>
+    <script src="loginreg.js"></script>
+    <script>
+        function togglePassword(id) {
+            const passwordInput = document.getElementById(id);
+            const eyeIcon = passwordInput.nextElementSibling;
+
+            // Toggle password visibility
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                eyeIcon.innerHTML = "<i class='fas fa-eye-slash'></i>";  // Change icon to 'eye-slash'
+            } else {
+                passwordInput.type = "password";
+                eyeIcon.innerHTML = "<i class='fas fa-eye'></i>";  // Change icon to 'eye'
+            }
+        }
+    </script>
+</body>
+</html>
