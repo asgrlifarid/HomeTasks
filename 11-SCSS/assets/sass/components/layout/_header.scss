@@ -1,0 +1,39 @@
+#header {
+  .container {
+    .header {
+      height: 100px;
+      @include flexBox();
+      gap: 18rem;
+
+      .header-gymnesium {
+        @include flexBox();
+      }
+      .header-number {
+        @include flexBox();
+        @include for-tablet-only {
+          display: none;
+        }
+        .header-number-icon {
+          width: 150px;
+          height: 100px;
+          background-color: rgb(255, 0, 106);
+          position: relative;
+          @include for-tablet-only{
+            display: none;
+          }
+          .fa-solid {
+            font-size: 30;
+            position: absolute;
+            left: 35%;
+            top: 35%;
+          }
+        }
+      }
+      .header-content {
+        @include for-tablet-only {
+          display: none;
+        }
+      }
+    }
+  }
+}
